@@ -1,0 +1,32 @@
+https://arduinojson.org/v6/example/udp-beacon/
+https://arduinojson.org/v6/how-to/improve-speed/
+https://www.aeq-web.com/arduino-bidirectional-udp-communication-code/
+https://arduino.stackexchange.com/questions/1013/how-do-i-split-an-incoming-string
+
+
+ void checkUDP( void )
+  {
+
+    byte p1;
+    byte p2;
+
+    int size = Udp.parsePacket();
+
+    if (size == NTP_PACKET_SIZE) {
+      memset(packetBuffer, 0, NTP_PACKET_SIZE); // empty the packet before we read it.
+      Udp.read(packetBuffer, NTP_PACKET_SIZE);  // read packet into the buffer
+
+      //  Serial.println("From :"); Serial.println(Udp.remoteIP());
+      //analogWrite(ACT_PIN_B, 255); feedback to me
+    watchDog = 0; // reset the watchdog.
+   for (byte i = 0; i < 4; i++)
+    {
+      // update the states.
+      relayStates[i] = 0; // default is relay off, failover to mains 240.
+     if (packetBuffer[i] == 1) relayStates[i] = 1;  // only if we get a 1, do we enable that particular relay
+   }
+   setRelays(); // set the new relay states.
+   }
+  while (Udp.parsePacket() > 0) ; // discard any previously received packets
+
+ }
