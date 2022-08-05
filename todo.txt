@@ -1,0 +1,22 @@
+Software:
+	Optimieren des Delays (+ Delay Multiplyer)
+	
+
+Platine: Korrektur
+	Filter nach Spannungswandler
+	Sicherung vor und nach Spannungswandler
+	Kühlungs-DoKo's unter RelayDriver
+	Größere Leiterbahnen an RelayDriver
+	LEDs Vorwiderstand Versetzen
+	[Empfänger] Relay Driver from SPI0 to SPI1
+	[Empfänger] Relay Driver EN1 -> GND
+	Klemmterminals statt Jumper für Spannung
+	Sender Vcc-In fehlerhaft beschriftet
+
+	!![Empfänger] GND verbinden mit Kupferdraht oder Isolator zwischen IC und uC
+	!![Empfänger] 5V -> SMD 4,7k -> NRST
+	[Sender] Hardware-Change-Detection 2-Bit Shiftregister -> XOR -> Teensy
+	
+
+
+https://forum.pjrc.com/threads/63539-Teensy-4-1-NativeEthernet-fixed-address-problem
