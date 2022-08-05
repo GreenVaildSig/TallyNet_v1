@@ -1,0 +1,1377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\twigg\OneDrive - ZDF\Gesellenprüfung\Tally-Ethernet-System\Empfaenger\Empfaenger.sch</source>
+    <date>08.10.2021 16:00:32</date>
+    <tool>Eeschema (5.1.10)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Multi-Tally-Empfänger</title>
+        <company>Zweites Deutsches Fernsehen</company>
+        <rev>v0.0.1</rev>
+        <date>2021-10-04</date>
+        <source>Empfaenger.sch</source>
+        <comment number="1" value="8-fach Tally-Ethernet Umsetzer"/>
+        <comment number="2" value="designed by Sven Mathäs"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Tallyausgangsschaltung/" tstamps="/615CE64B/">
+      <title_block>
+        <title>Tallyausgangsschaltung</title>
+        <company>Zweites Deutsches Fernsehen</company>
+        <rev>v0.0.2</rev>
+        <date>2021-10-05</date>
+        <source>TallyOut.sch</source>
+        <comment number="1" value="8-fach Tally-Ethernet Umsetzer (Empfänger)"/>
+        <comment number="2" value="designed by Sven Mathäs"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J3">
+      <value>XLR3</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet> ~</datasheet>
+      <libsource lib="Connector" part="XLR3" description="XLR Connector, Male or Female, 3 Pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>611F7F24</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>XLR3</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet> ~</datasheet>
+      <libsource lib="Connector" part="XLR3" description="XLR Connector, Male or Female, 3 Pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>611F7F63</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>XLR3</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet> ~</datasheet>
+      <libsource lib="Connector" part="XLR3" description="XLR Connector, Male or Female, 3 Pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61207F4B</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>XLR3</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet> ~</datasheet>
+      <libsource lib="Connector" part="XLR3" description="XLR Connector, Male or Female, 3 Pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61207F8A</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>XLR3</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet> ~</datasheet>
+      <libsource lib="Connector" part="XLR3" description="XLR Connector, Male or Female, 3 Pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>610B4D00</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>XLR3</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet> ~</datasheet>
+      <libsource lib="Connector" part="XLR3" description="XLR Connector, Male or Female, 3 Pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>610CEFF4</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>Teensy4.1</value>
+      <footprint>teensy:Teensy41</footprint>
+      <libsource lib="teensy" part="Teensy4.1" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612248A1</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>XLR3</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet> ~</datasheet>
+      <libsource lib="Connector" part="XLR3" description="XLR Connector, Male or Female, 3 Pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61547F0B</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>XLR3</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet> ~</datasheet>
+      <libsource lib="Connector" part="XLR3" description="XLR Connector, Male or Female, 3 Pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61547F17</tstamp>
+    </comp>
+    <comp ref="J10">
+      <value>USB_B</value>
+      <datasheet> ~</datasheet>
+      <libsource lib="Connector" part="USB_B" description="USB Type B connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>614A35B4</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>USB_C_Receptacle</value>
+      <datasheet>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</datasheet>
+      <libsource lib="Connector" part="USB_C_Receptacle" description="USB Full-Featured Type-C Receptacle connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>614A3DE3</tstamp>
+    </comp>
+    <comp ref="IC1">
+      <value>SN74HC595N</value>
+      <footprint>SamacSysFoot:DIP794W53P254L1930H508Q16N</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/sn74hc595.pdf</datasheet>
+      <fields>
+        <field name="Description">8-Bit Shift Registers With 3-State Output Registers</field>
+        <field name="Height">5.08</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">SN74HC595N</field>
+        <field name="Mouser Part Number">595-SN74HC595N</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74HC595N?qs=IEl3ej0IqwBTHkYa8XPoMQ%3D%3D</field>
+      </fields>
+      <libsource lib="dk_Logic-Shift-Registers" part="SN74HC595N" description="IC 8-BIT SHIFT REGISTER 16-DIP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6152E6DE</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>330</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615F8836</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>SamacSysFoot:MONO-KAP_SIZE-15-L-5_</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6160B2A3</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>1K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6161A5E6</tstamp>
+    </comp>
+    <comp ref="J11">
+      <value>LED Matrix</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_02x06_Top_Bottom" description="Generic connector, double row, 02x06, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61629A8D</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>220</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6164E3FF</tstamp>
+    </comp>
+    <comp ref="J12">
+      <value>SPI-Erweiterungsport</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6167B57D</tstamp>
+    </comp>
+    <comp ref="J14">
+      <value>Display</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_02x04_Top_Bottom" description="Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>616767BC</tstamp>
+    </comp>
+    <comp ref="PS1">
+      <value>MDS20A-12</value>
+      <footprint>SamacSysFoot:MDS20A12</footprint>
+      <datasheet>https://www.meanwell-web.com/content/files/pdfs/productPdfs/MW/MDS20/MDS20-spec.pdf</datasheet>
+      <fields>
+        <field name="Description">Isolated DC/DC Converters 9-18Vin 12V 1670mA 20W 2x1 Med Iso Reg</field>
+        <field name="Height">12.5</field>
+        <field name="Manufacturer_Name">Mean Well</field>
+        <field name="Manufacturer_Part_Number">MDS20A-12</field>
+        <field name="Mouser Part Number">709-MDS20A-12</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/MEAN-WELL/MDS20A-12?qs=OlC7AqGiEDmFDSoHFgUaHQ%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="MDS20A-12" description="Isolated DC/DC Converters 9-18Vin 12V 1670mA 20W 2x1 Med Iso Reg"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615FE3D0</tstamp>
+    </comp>
+    <comp ref="PS2">
+      <value>SPUN02M-05</value>
+      <footprint>SamacSysFoot:SPUN02M05</footprint>
+      <datasheet>https://www.mouser.in/ProductDetail/MEAN-WELL/SPUN02M-05?qs=%2Fha2pyFaduhFR5v0S2C9UJVEeDmHrXWPRsDCcs3Nalzz4l63UULR%2Fw%3D%3D</datasheet>
+      <fields>
+        <field name="Description">Isolated DC/DC Converters 12Vin 5Vout 0-400mA 2W SIP Unreg Iso</field>
+        <field name="Height">10.45</field>
+        <field name="Manufacturer_Name">Mean Well</field>
+        <field name="Manufacturer_Part_Number">SPUN02M-05</field>
+        <field name="Mouser Part Number">709-SPUN02M-05</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/MEAN-WELL/SPUN02M-05?qs=%252B6g0mu59x7JHfdd%252Bg28Myg%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="SPUN02M-05" description="Isolated DC/DC Converters 12Vin 5Vout 0-400mA 2W SIP Unreg Iso"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6151C101</tstamp>
+    </comp>
+    <comp ref="J13">
+      <value>J1B1211CCD</value>
+      <footprint>SamacSysFoot:J1B1211CCD</footprint>
+      <datasheet>http://wizwiki.net/wiki/lib/exe/fetch.php?media=products:wiz550web:wiz550webds_kr:j1b1211ccd.pdf</datasheet>
+      <fields>
+        <field name="Description">Modules Accessories RJ-45 w/ Transformer Connector /CETUS</field>
+        <field name="Height">13.6</field>
+        <field name="Manufacturer_Name">WIZnet Inc</field>
+        <field name="Manufacturer_Part_Number">J1B1211CCD</field>
+        <field name="Mouser Part Number">950-J1B1211CCD</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/WIZnet/J1B1211CCD?qs=6pHq9bjOlanFLUlTDcmBeQ%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="J1B1211CCD" description="Modules Accessories RJ-45 w/ Transformer Connector /CETUS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6162890E</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>SamacSysFoot:MONO-KAP_SIZE-15-L-5_</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/K104K15X7RF5TL2.pdf</datasheet>
+      <fields>
+        <field name="Description">Capacitor;Ceramic;Cap 0.1 uF Vishay 100nF Multilayer Ceramic Capacitor (MLCC) 50 V dc +/-10% X7R dielectric K Radial max op. temp. +125C</field>
+        <field name="Manufacturer_Name">Vishay</field>
+        <field name="Manufacturer_Part_Number">K104K15X7RF5TL2</field>
+        <field name="Mouser Part Number">594-K104K15X7RF5TL2</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Vishay-BC-Components/K104K15X7RF5TL2?qs=sYfpZ29HcUR83i3HiPAFlA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="K104K15X7RF5TL2" description="Capacitor;Ceramic;Cap 0.1 uF Vishay 100nF Multilayer Ceramic Capacitor (MLCC) 50 V dc +/-10% X7R dielectric K Radial max op. temp. +125C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6162BABB</tstamp>
+    </comp>
+    <comp ref="IC2">
+      <value>TPL9202PWP</value>
+      <footprint>SamacSysFoot:SOP65P640X120-21N</footprint>
+      <datasheet>http://www.ti.com/lit/gpn/TPL9202</datasheet>
+      <fields>
+        <field name="Description">Texas Instruments TPL9202PWP, Octal MOSFET Power Driver, 48uA, 7  18 V, 20-Pin HTSSOP</field>
+        <field name="Height">1.2</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">TPL9202PWP</field>
+        <field name="Mouser Part Number">595-TPL9202PWP</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPL9202PWP?qs=7kv20MEVUlhsPUOXOzx0LA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="TPL9202PWP" description="Texas Instruments TPL9202PWP, Octal MOSFET Power Driver, 48uA, 7  18 V, 20-Pin HTSSOP"/>
+      <sheetpath names="/Tallyausgangsschaltung/" tstamps="/615CE64B/"/>
+      <tstamp>615C4F9B</tstamp>
+    </comp>
+    <comp ref="K1">
+      <value>G5NB-1A-HA_DC5</value>
+      <footprint>SamacSysFoot:G5NB1AHADC5</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/G5NB-1A-HA DC5.pdf</datasheet>
+      <fields>
+        <field name="Description">General Purpose Relays PCB Power Relay Mini 1-pole 3A/5A</field>
+        <field name="Height">15.3</field>
+        <field name="Manufacturer_Name">Omron Electronics</field>
+        <field name="Manufacturer_Part_Number">G5NB-1A-HA DC5</field>
+        <field name="Mouser Part Number">653-G5NB-1A-HADC5</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Omron-Electronics/G5NB-1A-HA-DC5/?qs=xZ%2FP%252Ba9zWqYlwXQmF0rNMA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="G5NB-1A-HA_DC5" description="General Purpose Relays PCB Power Relay Mini 1-pole 3A/5A"/>
+      <sheetpath names="/Tallyausgangsschaltung/" tstamps="/615CE64B/"/>
+      <tstamp>615C8295</tstamp>
+    </comp>
+    <comp ref="K2">
+      <value>G5NB-1A-HA_DC5</value>
+      <footprint>SamacSysFoot:G5NB1AHADC5</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/G5NB-1A-HA DC5.pdf</datasheet>
+      <fields>
+        <field name="Description">General Purpose Relays PCB Power Relay Mini 1-pole 3A/5A</field>
+        <field name="Height">15.3</field>
+        <field name="Manufacturer_Name">Omron Electronics</field>
+        <field name="Manufacturer_Part_Number">G5NB-1A-HA DC5</field>
+        <field name="Mouser Part Number">653-G5NB-1A-HADC5</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Omron-Electronics/G5NB-1A-HA-DC5/?qs=xZ%2FP%252Ba9zWqYlwXQmF0rNMA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="G5NB-1A-HA_DC5" description="General Purpose Relays PCB Power Relay Mini 1-pole 3A/5A"/>
+      <sheetpath names="/Tallyausgangsschaltung/" tstamps="/615CE64B/"/>
+      <tstamp>615C8C65</tstamp>
+    </comp>
+    <comp ref="K3">
+      <value>G5NB-1A-HA_DC5</value>
+      <footprint>SamacSysFoot:G5NB1AHADC5</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/G5NB-1A-HA DC5.pdf</datasheet>
+      <fields>
+        <field name="Description">General Purpose Relays PCB Power Relay Mini 1-pole 3A/5A</field>
+        <field name="Height">15.3</field>
+        <field name="Manufacturer_Name">Omron Electronics</field>
+        <field name="Manufacturer_Part_Number">G5NB-1A-HA DC5</field>
+        <field name="Mouser Part Number">653-G5NB-1A-HADC5</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Omron-Electronics/G5NB-1A-HA-DC5/?qs=xZ%2FP%252Ba9zWqYlwXQmF0rNMA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="G5NB-1A-HA_DC5" description="General Purpose Relays PCB Power Relay Mini 1-pole 3A/5A"/>
+      <sheetpath names="/Tallyausgangsschaltung/" tstamps="/615CE64B/"/>
+      <tstamp>615CB839</tstamp>
+    </comp>
+    <comp ref="K4">
+      <value>G5NB-1A-HA_DC5</value>
+      <footprint>SamacSysFoot:G5NB1AHADC5</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/G5NB-1A-HA DC5.pdf</datasheet>
+      <fields>
+        <field name="Description">General Purpose Relays PCB Power Relay Mini 1-pole 3A/5A</field>
+        <field name="Height">15.3</field>
+        <field name="Manufacturer_Name">Omron Electronics</field>
+        <field name="Manufacturer_Part_Number">G5NB-1A-HA DC5</field>
+        <field name="Mouser Part Number">653-G5NB-1A-HADC5</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Omron-Electronics/G5NB-1A-HA-DC5/?qs=xZ%2FP%252Ba9zWqYlwXQmF0rNMA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="G5NB-1A-HA_DC5" description="General Purpose Relays PCB Power Relay Mini 1-pole 3A/5A"/>
+      <sheetpath names="/Tallyausgangsschaltung/" tstamps="/615CE64B/"/>
+      <tstamp>615CB845</tstamp>
+    </comp>
+    <comp ref="K5">
+      <value>G5NB-1A-HA_DC5</value>
+      <footprint>SamacSysFoot:G5NB1AHADC5</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/G5NB-1A-HA DC5.pdf</datasheet>
+      <fields>
+        <field name="Description">General Purpose Relays PCB Power Relay Mini 1-pole 3A/5A</field>
+        <field name="Height">15.3</field>
+        <field name="Manufacturer_Name">Omron Electronics</field>
+        <field name="Manufacturer_Part_Number">G5NB-1A-HA DC5</field>
+        <field name="Mouser Part Number">653-G5NB-1A-HADC5</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Omron-Electronics/G5NB-1A-HA-DC5/?qs=xZ%2FP%252Ba9zWqYlwXQmF0rNMA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="G5NB-1A-HA_DC5" description="General Purpose Relays PCB Power Relay Mini 1-pole 3A/5A"/>
+      <sheetpath names="/Tallyausgangsschaltung/" tstamps="/615CE64B/"/>
+      <tstamp>615CBF95</tstamp>
+    </comp>
+    <comp ref="K6">
+      <value>G5NB-1A-HA_DC5</value>
+      <footprint>SamacSysFoot:G5NB1AHADC5</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/G5NB-1A-HA DC5.pdf</datasheet>
+      <fields>
+        <field name="Description">General Purpose Relays PCB Power Relay Mini 1-pole 3A/5A</field>
+        <field name="Height">15.3</field>
+        <field name="Manufacturer_Name">Omron Electronics</field>
+        <field name="Manufacturer_Part_Number">G5NB-1A-HA DC5</field>
+        <field name="Mouser Part Number">653-G5NB-1A-HADC5</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Omron-Electronics/G5NB-1A-HA-DC5/?qs=xZ%2FP%252Ba9zWqYlwXQmF0rNMA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="G5NB-1A-HA_DC5" description="General Purpose Relays PCB Power Relay Mini 1-pole 3A/5A"/>
+      <sheetpath names="/Tallyausgangsschaltung/" tstamps="/615CE64B/"/>
+      <tstamp>615CBFA1</tstamp>
+    </comp>
+    <comp ref="K7">
+      <value>G5NB-1A-HA_DC5</value>
+      <footprint>SamacSysFoot:G5NB1AHADC5</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/G5NB-1A-HA DC5.pdf</datasheet>
+      <fields>
+        <field name="Description">General Purpose Relays PCB Power Relay Mini 1-pole 3A/5A</field>
+        <field name="Height">15.3</field>
+        <field name="Manufacturer_Name">Omron Electronics</field>
+        <field name="Manufacturer_Part_Number">G5NB-1A-HA DC5</field>
+        <field name="Mouser Part Number">653-G5NB-1A-HADC5</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Omron-Electronics/G5NB-1A-HA-DC5/?qs=xZ%2FP%252Ba9zWqYlwXQmF0rNMA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="G5NB-1A-HA_DC5" description="General Purpose Relays PCB Power Relay Mini 1-pole 3A/5A"/>
+      <sheetpath names="/Tallyausgangsschaltung/" tstamps="/615CE64B/"/>
+      <tstamp>615CCE55</tstamp>
+    </comp>
+    <comp ref="K8">
+      <value>G5NB-1A-HA_DC5</value>
+      <footprint>SamacSysFoot:G5NB1AHADC5</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/G5NB-1A-HA DC5.pdf</datasheet>
+      <fields>
+        <field name="Description">General Purpose Relays PCB Power Relay Mini 1-pole 3A/5A</field>
+        <field name="Height">15.3</field>
+        <field name="Manufacturer_Name">Omron Electronics</field>
+        <field name="Manufacturer_Part_Number">G5NB-1A-HA DC5</field>
+        <field name="Mouser Part Number">653-G5NB-1A-HADC5</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Omron-Electronics/G5NB-1A-HA-DC5/?qs=xZ%2FP%252Ba9zWqYlwXQmF0rNMA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="G5NB-1A-HA_DC5" description="General Purpose Relays PCB Power Relay Mini 1-pole 3A/5A"/>
+      <sheetpath names="/Tallyausgangsschaltung/" tstamps="/615CE64B/"/>
+      <tstamp>615CCE61</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="USB_B">
+      <description>USB Type B connector</description>
+      <docs> ~</docs>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_B</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_out"/>
+        <pin num="2" name="D-" type="BiDi"/>
+        <pin num="3" name="D+" type="BiDi"/>
+        <pin num="4" name="GND" type="power_out"/>
+        <pin num="5" name="Shield" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="USB_C_Receptacle">
+      <description>USB Full-Featured Type-C Receptacle connector</description>
+      <docs>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</docs>
+      <footprints>
+        <fp>USB*C*Receptacle*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_C_Receptacle</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="GND" type="passive"/>
+        <pin num="A2" name="TX1+" type="BiDi"/>
+        <pin num="A3" name="TX1-" type="BiDi"/>
+        <pin num="A4" name="VBUS" type="passive"/>
+        <pin num="A5" name="CC1" type="BiDi"/>
+        <pin num="A6" name="D+" type="BiDi"/>
+        <pin num="A7" name="D-" type="BiDi"/>
+        <pin num="A8" name="SBU1" type="BiDi"/>
+        <pin num="A9" name="VBUS" type="passive"/>
+        <pin num="A10" name="RX2-" type="BiDi"/>
+        <pin num="A11" name="RX2+" type="BiDi"/>
+        <pin num="A12" name="GND" type="passive"/>
+        <pin num="B1" name="GND" type="passive"/>
+        <pin num="B2" name="TX2+" type="BiDi"/>
+        <pin num="B3" name="TX2-" type="BiDi"/>
+        <pin num="B4" name="VBUS" type="passive"/>
+        <pin num="B5" name="CC2" type="BiDi"/>
+        <pin num="B6" name="D+" type="BiDi"/>
+        <pin num="B7" name="D-" type="BiDi"/>
+        <pin num="B8" name="SBU2" type="BiDi"/>
+        <pin num="B9" name="VBUS" type="passive"/>
+        <pin num="B10" name="RX1-" type="BiDi"/>
+        <pin num="B11" name="RX1+" type="BiDi"/>
+        <pin num="B12" name="GND" type="passive"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="XLR3">
+      <description>XLR Connector, Male or Female, 3 Pins</description>
+      <docs> ~</docs>
+      <footprints>
+        <fp>Jack*XLR*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">XLR3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x08">
+      <description>Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x08</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x04_Top_Bottom">
+      <description>Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x04_Top_Bottom</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x06_Top_Bottom">
+      <description>Generic connector, double row, 02x06, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x06_Top_Bottom</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="G5NB-1A-HA_DC5">
+      <description>General Purpose Relays PCB Power Relay Mini 1-pole 3A/5A</description>
+      <docs>https://componentsearchengine.com/Datasheets/1/G5NB-1A-HA DC5.pdf</docs>
+      <fields>
+        <field name="Reference">K</field>
+        <field name="Value">G5NB-1A-HA_DC5</field>
+        <field name="Footprint">G5NB1AHADC5</field>
+        <field name="Datasheet">https://componentsearchengine.com/Datasheets/1/G5NB-1A-HA DC5.pdf</field>
+        <field name="Description">General Purpose Relays PCB Power Relay Mini 1-pole 3A/5A</field>
+        <field name="Height">15.3</field>
+        <field name="Mouser Part Number">653-G5NB-1A-HADC5</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Omron-Electronics/G5NB-1A-HA-DC5?qs=xZ%2FP%252Ba9zWqYlwXQmF0rNMA%3D%3D</field>
+        <field name="Manufacturer_Name">Omron Electronics</field>
+        <field name="Manufacturer_Part_Number">G5NB-1A-HA DC5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="COIL_1" type="passive"/>
+        <pin num="2" name="COM" type="passive"/>
+        <pin num="3" name="NO" type="passive"/>
+        <pin num="4" name="COIL_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="J1B1211CCD">
+      <description>Modules Accessories RJ-45 w/ Transformer Connector /CETUS</description>
+      <docs>http://wizwiki.net/wiki/lib/exe/fetch.php?media=products:wiz550web:wiz550webds_kr:j1b1211ccd.pdf</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">J1B1211CCD</field>
+        <field name="Footprint">J1B1211CCD</field>
+        <field name="Datasheet">http://wizwiki.net/wiki/lib/exe/fetch.php?media=products:wiz550web:wiz550webds_kr:j1b1211ccd.pdf</field>
+        <field name="Description">Modules Accessories RJ-45 w/ Transformer Connector /CETUS</field>
+        <field name="Height">13.6</field>
+        <field name="Mouser Part Number">950-J1B1211CCD</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/WIZnet/J1B1211CCD?qs=6pHq9bjOlanFLUlTDcmBeQ%3D%3D</field>
+        <field name="Manufacturer_Name">WIZnet Inc</field>
+        <field name="Manufacturer_Part_Number">J1B1211CCD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+        <pin num="10" name="10" type="passive"/>
+        <pin num="11" name="11" type="passive"/>
+        <pin num="12" name="12" type="passive"/>
+        <pin num="13" name="13" type="passive"/>
+        <pin num="14" name="14" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="K104K15X7RF5TL2">
+      <description>Capacitor;Ceramic;Cap 0.1 uF Vishay 100nF Multilayer Ceramic Capacitor (MLCC) 50 V dc +/-10% X7R dielectric K Radial max op. temp. +125C</description>
+      <docs>https://componentsearchengine.com/Datasheets/1/K104K15X7RF5TL2.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">K104K15X7RF5TL2</field>
+        <field name="Footprint">MONO-KAP(SIZE-15-L-5)</field>
+        <field name="Datasheet">https://componentsearchengine.com/Datasheets/1/K104K15X7RF5TL2.pdf</field>
+        <field name="Description">Capacitor;Ceramic;Cap 0.1 uF Vishay 100nF Multilayer Ceramic Capacitor (MLCC) 50 V dc +/-10% X7R dielectric K Radial max op. temp. +125C</field>
+        <field name="Mouser Part Number">594-K104K15X7RF5TL2</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Vishay-BC-Components/K104K15X7RF5TL2?qs=sYfpZ29HcUR83i3HiPAFlA%3D%3D</field>
+        <field name="Manufacturer_Name">Vishay</field>
+        <field name="Manufacturer_Part_Number">K104K15X7RF5TL2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="MDS20A-12">
+      <description>Isolated DC/DC Converters 9-18Vin 12V 1670mA 20W 2x1 Med Iso Reg</description>
+      <docs>https://www.meanwell-web.com/content/files/pdfs/productPdfs/MW/MDS20/MDS20-spec.pdf</docs>
+      <fields>
+        <field name="Reference">PS</field>
+        <field name="Value">MDS20A-12</field>
+        <field name="Footprint">MDS20A12</field>
+        <field name="Datasheet">https://www.meanwell-web.com/content/files/pdfs/productPdfs/MW/MDS20/MDS20-spec.pdf</field>
+        <field name="Description">Isolated DC/DC Converters 9-18Vin 12V 1670mA 20W 2x1 Med Iso Reg</field>
+        <field name="Height">12.5</field>
+        <field name="Mouser Part Number">709-MDS20A-12</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/MEAN-WELL/MDS20A-12?qs=OlC7AqGiEDmFDSoHFgUaHQ%3D%3D</field>
+        <field name="Manufacturer_Name">Mean Well</field>
+        <field name="Manufacturer_Part_Number">MDS20A-12</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+_VIN" type="passive"/>
+        <pin num="2" name="-VIN" type="passive"/>
+        <pin num="3" name="+VOUT" type="passive"/>
+        <pin num="5" name="-VOUT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="SPUN02M-05">
+      <description>Isolated DC/DC Converters 12Vin 5Vout 0-400mA 2W SIP Unreg Iso</description>
+      <docs>https://www.mouser.in/ProductDetail/MEAN-WELL/SPUN02M-05?qs=%2Fha2pyFaduhFR5v0S2C9UJVEeDmHrXWPRsDCcs3Nalzz4l63UULR%2Fw%3D%3D</docs>
+      <fields>
+        <field name="Reference">PS</field>
+        <field name="Value">SPUN02M-05</field>
+        <field name="Footprint">SPUN02M05</field>
+        <field name="Datasheet">https://www.mouser.in/ProductDetail/MEAN-WELL/SPUN02M-05?qs=%2Fha2pyFaduhFR5v0S2C9UJVEeDmHrXWPRsDCcs3Nalzz4l63UULR%2Fw%3D%3D</field>
+        <field name="Description">Isolated DC/DC Converters 12Vin 5Vout 0-400mA 2W SIP Unreg Iso</field>
+        <field name="Height">10.45</field>
+        <field name="Mouser Part Number">709-SPUN02M-05</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/MEAN-WELL/SPUN02M-05?qs=%252B6g0mu59x7JHfdd%252Bg28Myg%3D%3D</field>
+        <field name="Manufacturer_Name">Mean Well</field>
+        <field name="Manufacturer_Part_Number">SPUN02M-05</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+VIN" type="passive"/>
+        <pin num="2" name="-VIN" type="passive"/>
+        <pin num="5" name="-VOUT" type="passive"/>
+        <pin num="6" name="NO_PIN" type="passive"/>
+        <pin num="7" name="+VOUT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="TPL9202PWP">
+      <description>Texas Instruments TPL9202PWP, Octal MOSFET Power Driver, 48uA, 7  18 V, 20-Pin HTSSOP</description>
+      <docs>http://www.ti.com/lit/gpn/TPL9202</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">TPL9202PWP</field>
+        <field name="Footprint">SOP65P640X120-21N</field>
+        <field name="Datasheet">http://www.ti.com/lit/gpn/TPL9202</field>
+        <field name="Description">Texas Instruments TPL9202PWP, Octal MOSFET Power Driver, 48uA, 7  18 V, 20-Pin HTSSOP</field>
+        <field name="Height">1.2</field>
+        <field name="Mouser Part Number">595-TPL9202PWP</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPL9202PWP?qs=7kv20MEVUlhsPUOXOzx0LA%3D%3D</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">TPL9202PWP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="BO_OUTZ" type="passive"/>
+        <pin num="2" name="OUT1" type="passive"/>
+        <pin num="3" name="OUT2" type="passive"/>
+        <pin num="4" name="OUT3" type="passive"/>
+        <pin num="5" name="OUT4" type="passive"/>
+        <pin num="6" name="OUT5" type="passive"/>
+        <pin num="7" name="OUT6" type="passive"/>
+        <pin num="8" name="OUT7" type="passive"/>
+        <pin num="9" name="OUT8" type="passive"/>
+        <pin num="10" name="GND" type="passive"/>
+        <pin num="11" name="NC" type="NotConnected"/>
+        <pin num="12" name="EN1" type="passive"/>
+        <pin num="13" name="RDELAY" type="passive"/>
+        <pin num="14" name="~RST" type="passive"/>
+        <pin num="15" name="MOSI" type="passive"/>
+        <pin num="16" name="NCS" type="passive"/>
+        <pin num="17" name="SCLK" type="passive"/>
+        <pin num="18" name="5V_OUT" type="passive"/>
+        <pin num="19" name="VIN" type="passive"/>
+        <pin num="20" name="BO" type="passive"/>
+        <pin num="21" name="EP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="dk_Logic-Shift-Registers" part="SN74HC595N">
+      <description>IC 8-BIT SHIFT REGISTER 16-DIP</description>
+      <docs>http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&amp;gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc595</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74HC595N</field>
+        <field name="Footprint">digikey-footprints:DIP-16_W7.62mm</field>
+        <field name="Datasheet">http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&amp;gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc595</field>
+        <field name="Digi-Key_PN">296-1600-5-ND</field>
+        <field name="MPN">SN74HC595N</field>
+        <field name="Category">Integrated Circuits (ICs)</field>
+        <field name="Family">Logic - Shift Registers</field>
+        <field name="DK_Datasheet_Link">http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&amp;gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc595</field>
+        <field name="DK_Detail_Page">/product-detail/en/texas-instruments/SN74HC595N/296-1600-5-ND/277246</field>
+        <field name="Description">IC 8-BIT SHIFT REGISTER 16-DIP</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="QB" type="output"/>
+        <pin num="2" name="QC" type="output"/>
+        <pin num="3" name="QD" type="output"/>
+        <pin num="4" name="QE" type="output"/>
+        <pin num="5" name="QF" type="output"/>
+        <pin num="6" name="QG" type="output"/>
+        <pin num="7" name="QH" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="QH'" type="output"/>
+        <pin num="10" name="~SRCLR" type="input"/>
+        <pin num="11" name="SRCLK" type="input"/>
+        <pin num="12" name="RCLK" type="input"/>
+        <pin num="13" name="~OE" type="input"/>
+        <pin num="14" name="SER" type="input"/>
+        <pin num="15" name="QA" type="output"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="teensy" part="Teensy4.1">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Teensy4.1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="0_RX1_CRX2_CS1" type="BiDi"/>
+        <pin num="3" name="1_TX1_CTX2_MISO1" type="BiDi"/>
+        <pin num="4" name="2_OUT2" type="BiDi"/>
+        <pin num="5" name="3_LRCLK2" type="BiDi"/>
+        <pin num="6" name="4_BCLK2" type="BiDi"/>
+        <pin num="7" name="5_IN2" type="BiDi"/>
+        <pin num="8" name="6_OUT1D" type="BiDi"/>
+        <pin num="9" name="7_RX2_OUT1A" type="BiDi"/>
+        <pin num="10" name="8_TX2_IN1" type="BiDi"/>
+        <pin num="11" name="9_OUT1C" type="BiDi"/>
+        <pin num="12" name="10_CS_MQSR" type="BiDi"/>
+        <pin num="13" name="11_MOSI_CTX1" type="BiDi"/>
+        <pin num="14" name="12_MISO_MQSL" type="BiDi"/>
+        <pin num="15" name="3V3" type="power_in"/>
+        <pin num="16" name="24_A10_TX6_SCL2" type="BiDi"/>
+        <pin num="17" name="25_A11_RX6_SDA2" type="BiDi"/>
+        <pin num="18" name="26_A12_MOSI1" type="BiDi"/>
+        <pin num="19" name="27_A13_SCK1" type="BiDi"/>
+        <pin num="20" name="28_RX7" type="BiDi"/>
+        <pin num="21" name="29_TX7" type="BiDi"/>
+        <pin num="22" name="30_CRX3" type="BiDi"/>
+        <pin num="23" name="31_CTX3" type="BiDi"/>
+        <pin num="24" name="32_OUT1B" type="BiDi"/>
+        <pin num="25" name="33_MCLK2" type="BiDi"/>
+        <pin num="26" name="34_RX8" type="BiDi"/>
+        <pin num="27" name="35_TX8" type="BiDi"/>
+        <pin num="28" name="36_CS" type="BiDi"/>
+        <pin num="29" name="37_CS" type="BiDi"/>
+        <pin num="30" name="38_CS1_IN1" type="BiDi"/>
+        <pin num="31" name="39_MISO1_OUT1A" type="BiDi"/>
+        <pin num="32" name="40_A16" type="BiDi"/>
+        <pin num="33" name="41_A17" type="BiDi"/>
+        <pin num="34" name="GND" type="power_in"/>
+        <pin num="35" name="13_SCK_LED" type="BiDi"/>
+        <pin num="36" name="14_A0_TX3_SPDIF_OUT" type="BiDi"/>
+        <pin num="37" name="15_A1_RX3_SPDIF_IN" type="BiDi"/>
+        <pin num="38" name="16_A2_RX4_SCL1" type="BiDi"/>
+        <pin num="39" name="17_A3_TX4_SDA1" type="BiDi"/>
+        <pin num="40" name="18_A4_SDA" type="BiDi"/>
+        <pin num="41" name="19_A5_SCL" type="BiDi"/>
+        <pin num="42" name="20_A6_TX5_LRCLK1" type="BiDi"/>
+        <pin num="43" name="21_A7_RX5_BCLK1" type="BiDi"/>
+        <pin num="44" name="22_A8_CTX1" type="BiDi"/>
+        <pin num="45" name="23_A9_CRX1_MCLK1" type="BiDi"/>
+        <pin num="46" name="3V3" type="output"/>
+        <pin num="47" name="GND" type="output"/>
+        <pin num="48" name="VIN" type="power_in"/>
+        <pin num="49" name="VUSB" type="power_out"/>
+        <pin num="50" name="VBAT" type="power_in"/>
+        <pin num="51" name="3V3" type="power_in"/>
+        <pin num="52" name="GND" type="input"/>
+        <pin num="53" name="PROGRAM" type="input"/>
+        <pin num="54" name="ON_OFF" type="input"/>
+        <pin num="55" name="5V" type="power_out"/>
+        <pin num="56" name="D-" type="BiDi"/>
+        <pin num="57" name="D+" type="BiDi"/>
+        <pin num="58" name="GND" type="power_in"/>
+        <pin num="59" name="GND" type="power_in"/>
+        <pin num="60" name="R+" type="BiDi"/>
+        <pin num="61" name="LED" type="BiDi"/>
+        <pin num="62" name="T-" type="BiDi"/>
+        <pin num="63" name="T+" type="BiDi"/>
+        <pin num="64" name="GND" type="power_in"/>
+        <pin num="65" name="R-" type="BiDi"/>
+        <pin num="66" name="D-" type="BiDi"/>
+        <pin num="67" name="D+" type="BiDi"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>D:\Programme\Berufschule\kiCAD\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>D:\Programme\Berufschule\kiCAD\share\kicad\library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>D:\Programme\Berufschule\kiCAD\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="SamacSys_Parts">
+      <uri>C:\Users\twigg\OneDrive - ZDF\Gesellenprüfung\Tally-Ethernet-System\Empfaenger/lib/SamacSys_Parts.lib</uri>
+    </library>
+    <library logical="dk_Logic-Shift-Registers">
+      <uri>C:\Users\twigg\OneDrive - ZDF\Gesellenprüfung\Tally-Ethernet-System\Empfaenger/lib/digikey-symbols/dk_Logic-Shift-Registers.lib</uri>
+    </library>
+    <library logical="teensy">
+      <uri>C:\Users\twigg\OneDrive - ZDF\Gesellenprüfung\Tally-Ethernet-System\Empfaenger/lib/teensy.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Eth_T+">
+      <node ref="J13" pin="1"/>
+      <node ref="U1" pin="63"/>
+    </net>
+    <net code="2" name="Net-(J12-Pad8)">
+      <node ref="U1" pin="27"/>
+      <node ref="J12" pin="8"/>
+    </net>
+    <net code="3" name="Net-(J12-Pad7)">
+      <node ref="U1" pin="28"/>
+      <node ref="J12" pin="7"/>
+    </net>
+    <net code="4" name="SPI1-SCK">
+      <node ref="J12" pin="6"/>
+      <node ref="U1" pin="19"/>
+    </net>
+    <net code="5" name="SPI1-MOSI">
+      <node ref="U1" pin="18"/>
+      <node ref="J12" pin="5"/>
+    </net>
+    <net code="6" name="SPI1-MISO">
+      <node ref="U1" pin="3"/>
+      <node ref="J12" pin="4"/>
+    </net>
+    <net code="7" name="SPI1-CS1">
+      <node ref="U1" pin="2"/>
+      <node ref="J12" pin="3"/>
+    </net>
+    <net code="8" name="Eth_R+">
+      <node ref="J13" pin="4"/>
+      <node ref="U1" pin="60"/>
+    </net>
+    <net code="9" name="Eth_T-">
+      <node ref="J13" pin="3"/>
+      <node ref="U1" pin="62"/>
+    </net>
+    <net code="10" name="Eth_R-">
+      <node ref="U1" pin="65"/>
+      <node ref="J13" pin="6"/>
+    </net>
+    <net code="11" name="GND3V3">
+      <node ref="IC1" pin="8"/>
+      <node ref="IC1" pin="13"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="U1" pin="47"/>
+    </net>
+    <net code="12" name="Net-(J11-Pad8)">
+      <node ref="J11" pin="8"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="13" name="Net-(J11-Pad1)">
+      <node ref="U1" pin="61"/>
+      <node ref="J11" pin="1"/>
+    </net>
+    <net code="14" name="SPI0-SCK">
+      <node ref="J14" pin="3"/>
+      <node ref="IC2" pin="17"/>
+      <node ref="U1" pin="35"/>
+    </net>
+    <net code="15" name="Net-(J14-Pad8)">
+      <node ref="J14" pin="8"/>
+    </net>
+    <net code="16" name="SPI0-CS0">
+      <node ref="J14" pin="7"/>
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="17" name="DISP-DC">
+      <node ref="U1" pin="33"/>
+      <node ref="J14" pin="6"/>
+    </net>
+    <net code="18" name="DISP-Res">
+      <node ref="U1" pin="32"/>
+      <node ref="J14" pin="5"/>
+    </net>
+    <net code="19" name="SPI0-MOSI">
+      <node ref="IC2" pin="15"/>
+      <node ref="J14" pin="4"/>
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="20" name="Net-(IC1-Pad7)">
+      <node ref="J11" pin="9"/>
+      <node ref="IC1" pin="7"/>
+    </net>
+    <net code="21" name="3V3">
+      <node ref="U1" pin="46"/>
+      <node ref="IC1" pin="16"/>
+      <node ref="J14" pin="2"/>
+      <node ref="R1" pin="1"/>
+      <node ref="J12" pin="1"/>
+    </net>
+    <net code="22" name="GNDSPI">
+      <node ref="U1" pin="34"/>
+      <node ref="J12" pin="2"/>
+      <node ref="J14" pin="1"/>
+    </net>
+    <net code="23" name="Net-(IC1-Pad5)">
+      <node ref="IC1" pin="5"/>
+      <node ref="J11" pin="11"/>
+    </net>
+    <net code="24" name="Net-(IC1-Pad6)">
+      <node ref="J11" pin="10"/>
+      <node ref="IC1" pin="6"/>
+    </net>
+    <net code="25" name="Net-(IC1-Pad4)">
+      <node ref="J11" pin="12"/>
+      <node ref="IC1" pin="4"/>
+    </net>
+    <net code="26" name="Net-(IC1-Pad3)">
+      <node ref="J11" pin="6"/>
+      <node ref="IC1" pin="3"/>
+    </net>
+    <net code="27" name="Net-(IC1-Pad2)">
+      <node ref="IC1" pin="2"/>
+      <node ref="J11" pin="5"/>
+    </net>
+    <net code="28" name="Net-(IC1-Pad1)">
+      <node ref="J11" pin="4"/>
+      <node ref="IC1" pin="1"/>
+    </net>
+    <net code="29" name="Net-(IC1-Pad9)">
+      <node ref="R2" pin="1"/>
+      <node ref="IC1" pin="9"/>
+    </net>
+    <net code="30" name="Net-(IC1-Pad15)">
+      <node ref="J11" pin="3"/>
+      <node ref="IC1" pin="15"/>
+    </net>
+    <net code="31" name="Net-(J11-Pad2)">
+      <node ref="J11" pin="2"/>
+    </net>
+    <net code="32" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1"/>
+      <node ref="R1" pin="2"/>
+      <node ref="IC1" pin="10"/>
+    </net>
+    <net code="33" name="Net-(J13-Pad7)">
+      <node ref="J13" pin="7"/>
+    </net>
+    <net code="34" name="/Tallyausgangsschaltung/EN1">
+      <node ref="U1" pin="20"/>
+      <node ref="IC2" pin="12"/>
+    </net>
+    <net code="35" name="/Tallyausgangsschaltung/Tally8">
+      <node ref="K8" pin="3"/>
+      <node ref="J8" pin="2"/>
+    </net>
+    <net code="36" name="/Tallyausgangsschaltung/Tally7">
+      <node ref="K7" pin="3"/>
+      <node ref="J7" pin="2"/>
+    </net>
+    <net code="37" name="/Tallyausgangsschaltung/Tally6">
+      <node ref="J6" pin="2"/>
+      <node ref="K6" pin="3"/>
+    </net>
+    <net code="38" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1"/>
+      <node ref="J13" pin="5"/>
+      <node ref="J13" pin="2"/>
+    </net>
+    <net code="39" name="/Tallyausgangsschaltung/Tally1">
+      <node ref="K1" pin="3"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="40" name="Net-(J13-Pad14)">
+      <node ref="J13" pin="14"/>
+    </net>
+    <net code="41" name="Net-(J13-Pad13)">
+      <node ref="J13" pin="13"/>
+    </net>
+    <net code="42" name="Net-(J13-Pad12)">
+      <node ref="J13" pin="12"/>
+    </net>
+    <net code="43" name="Net-(J13-Pad11)">
+      <node ref="J13" pin="11"/>
+    </net>
+    <net code="44" name="Net-(J13-Pad10)">
+      <node ref="J13" pin="10"/>
+    </net>
+    <net code="45" name="Net-(J13-Pad9)">
+      <node ref="J13" pin="9"/>
+    </net>
+    <net code="46" name="+12V">
+      <node ref="PS2" pin="1"/>
+      <node ref="PS1" pin="1"/>
+    </net>
+    <net code="47" name="GND">
+      <node ref="PS1" pin="2"/>
+      <node ref="PS2" pin="2"/>
+    </net>
+    <net code="48" name="GND12V">
+      <node ref="IC2" pin="10"/>
+      <node ref="PS1" pin="5"/>
+    </net>
+    <net code="49" name="12V">
+      <node ref="K5" pin="1"/>
+      <node ref="K1" pin="1"/>
+      <node ref="K4" pin="1"/>
+      <node ref="IC2" pin="19"/>
+      <node ref="K7" pin="1"/>
+      <node ref="K6" pin="1"/>
+      <node ref="K3" pin="1"/>
+      <node ref="K2" pin="1"/>
+      <node ref="K8" pin="1"/>
+      <node ref="PS1" pin="3"/>
+    </net>
+    <net code="50" name="/Tallyausgangsschaltung/Tally5">
+      <node ref="J5" pin="2"/>
+      <node ref="K5" pin="3"/>
+    </net>
+    <net code="51" name="/Tallyausgangsschaltung/Tally4">
+      <node ref="J4" pin="2"/>
+      <node ref="K4" pin="3"/>
+    </net>
+    <net code="52" name="/Tallyausgangsschaltung/Tally3">
+      <node ref="J3" pin="2"/>
+      <node ref="K3" pin="3"/>
+    </net>
+    <net code="53" name="/Tallyausgangsschaltung/Tally2">
+      <node ref="J2" pin="2"/>
+      <node ref="K2" pin="3"/>
+    </net>
+    <net code="54" name="GNDTally">
+      <node ref="K6" pin="2"/>
+      <node ref="K7" pin="2"/>
+      <node ref="J1" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="J3" pin="3"/>
+      <node ref="J4" pin="1"/>
+      <node ref="J4" pin="3"/>
+      <node ref="J5" pin="1"/>
+      <node ref="J5" pin="3"/>
+      <node ref="J6" pin="1"/>
+      <node ref="J6" pin="3"/>
+      <node ref="K8" pin="2"/>
+      <node ref="J1" pin="3"/>
+      <node ref="J2" pin="1"/>
+      <node ref="J2" pin="3"/>
+      <node ref="K1" pin="2"/>
+      <node ref="J8" pin="1"/>
+      <node ref="K2" pin="2"/>
+      <node ref="K3" pin="2"/>
+      <node ref="J7" pin="1"/>
+      <node ref="J7" pin="3"/>
+      <node ref="J8" pin="3"/>
+      <node ref="K4" pin="2"/>
+      <node ref="K5" pin="2"/>
+    </net>
+    <net code="55" name="SPI0-CS1">
+      <node ref="IC2" pin="16"/>
+      <node ref="U1" pin="29"/>
+    </net>
+    <net code="56" name="5VIC">
+      <node ref="U1" pin="48"/>
+      <node ref="U1" pin="49"/>
+      <node ref="PS2" pin="7"/>
+    </net>
+    <net code="57" name="Net-(PS2-Pad6)">
+      <node ref="PS2" pin="6"/>
+    </net>
+    <net code="58" name="GNDIC">
+      <node ref="U1" pin="1"/>
+      <node ref="PS2" pin="5"/>
+    </net>
+    <net code="59" name="Net-(U1-Pad54)">
+      <node ref="U1" pin="54"/>
+    </net>
+    <net code="60" name="GNDEth">
+      <node ref="J11" pin="7"/>
+      <node ref="U1" pin="64"/>
+      <node ref="C2" pin="2"/>
+      <node ref="J13" pin="8"/>
+    </net>
+    <net code="61" name="Net-(U1-Pad6)">
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="62" name="Net-(U1-Pad59)">
+      <node ref="U1" pin="59"/>
+    </net>
+    <net code="63" name="Net-(U1-Pad58)">
+      <node ref="U1" pin="58"/>
+    </net>
+    <net code="64" name="Net-(U1-Pad57)">
+      <node ref="U1" pin="57"/>
+    </net>
+    <net code="65" name="Net-(U1-Pad56)">
+      <node ref="U1" pin="56"/>
+    </net>
+    <net code="66" name="Net-(U1-Pad55)">
+      <node ref="U1" pin="55"/>
+    </net>
+    <net code="67" name="Net-(U1-Pad53)">
+      <node ref="U1" pin="53"/>
+    </net>
+    <net code="68" name="Net-(U1-Pad52)">
+      <node ref="U1" pin="52"/>
+    </net>
+    <net code="69" name="Net-(U1-Pad51)">
+      <node ref="U1" pin="51"/>
+    </net>
+    <net code="70" name="Net-(U1-Pad50)">
+      <node ref="U1" pin="50"/>
+    </net>
+    <net code="71" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="72" name="Net-(U1-Pad45)">
+      <node ref="U1" pin="45"/>
+    </net>
+    <net code="73" name="Net-(U1-Pad44)">
+      <node ref="U1" pin="44"/>
+    </net>
+    <net code="74" name="Net-(U1-Pad43)">
+      <node ref="U1" pin="43"/>
+    </net>
+    <net code="75" name="USBDP">
+      <node ref="U1" pin="67"/>
+      <node ref="J10" pin="3"/>
+      <node ref="J9" pin="B6"/>
+      <node ref="J9" pin="A6"/>
+    </net>
+    <net code="76" name="USBDN">
+      <node ref="J10" pin="2"/>
+      <node ref="J9" pin="A7"/>
+      <node ref="J9" pin="B7"/>
+      <node ref="U1" pin="66"/>
+    </net>
+    <net code="77" name="Net-(J10-Pad1)">
+      <node ref="J10" pin="1"/>
+    </net>
+    <net code="78" name="Net-(U1-Pad42)">
+      <node ref="U1" pin="42"/>
+    </net>
+    <net code="79" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="80" name="Net-(U1-Pad9)">
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="81" name="Net-(U1-Pad8)">
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="82" name="Net-(U1-Pad7)">
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="83" name="SPI0-MISO">
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="84" name="Net-(U1-Pad11)">
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="85" name="Net-(U1-Pad10)">
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="86" name="Net-(U1-Pad15)">
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="87" name="Net-(U1-Pad41)">
+      <node ref="U1" pin="41"/>
+    </net>
+    <net code="88" name="Net-(U1-Pad40)">
+      <node ref="U1" pin="40"/>
+    </net>
+    <net code="89" name="Net-(U1-Pad39)">
+      <node ref="U1" pin="39"/>
+    </net>
+    <net code="90" name="Net-(U1-Pad38)">
+      <node ref="U1" pin="38"/>
+    </net>
+    <net code="91" name="Net-(U1-Pad37)">
+      <node ref="U1" pin="37"/>
+    </net>
+    <net code="92" name="Net-(U1-Pad36)">
+      <node ref="U1" pin="36"/>
+    </net>
+    <net code="93" name="Net-(U1-Pad31)">
+      <node ref="U1" pin="31"/>
+    </net>
+    <net code="94" name="Net-(U1-Pad30)">
+      <node ref="U1" pin="30"/>
+    </net>
+    <net code="95" name="Net-(U1-Pad26)">
+      <node ref="U1" pin="26"/>
+    </net>
+    <net code="96" name="Net-(U1-Pad25)">
+      <node ref="U1" pin="25"/>
+    </net>
+    <net code="97" name="Net-(U1-Pad24)">
+      <node ref="U1" pin="24"/>
+    </net>
+    <net code="98" name="Net-(IC1-Pad14)">
+      <node ref="U1" pin="21"/>
+      <node ref="IC1" pin="14"/>
+    </net>
+    <net code="99" name="Net-(U1-Pad17)">
+      <node ref="U1" pin="17"/>
+    </net>
+    <net code="100" name="Net-(U1-Pad16)">
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="101" name="Net-(IC1-Pad12)">
+      <node ref="U1" pin="22"/>
+      <node ref="IC1" pin="12"/>
+    </net>
+    <net code="102" name="Net-(IC1-Pad11)">
+      <node ref="U1" pin="23"/>
+      <node ref="IC1" pin="11"/>
+    </net>
+    <net code="103" name="Net-(J10-Pad4)">
+      <node ref="J10" pin="5"/>
+      <node ref="J10" pin="4"/>
+    </net>
+    <net code="104" name="Net-(J9-PadA4)">
+      <node ref="J9" pin="A4"/>
+      <node ref="J9" pin="A9"/>
+      <node ref="J9" pin="B9"/>
+      <node ref="J9" pin="B4"/>
+    </net>
+    <net code="105" name="Net-(J9-PadB8)">
+      <node ref="J9" pin="B8"/>
+    </net>
+    <net code="106" name="Net-(J9-PadB5)">
+      <node ref="J9" pin="B5"/>
+    </net>
+    <net code="107" name="Net-(J9-PadB3)">
+      <node ref="J9" pin="B3"/>
+    </net>
+    <net code="108" name="Net-(J9-PadB2)">
+      <node ref="J9" pin="B2"/>
+    </net>
+    <net code="109" name="Net-(J9-PadA1)">
+      <node ref="J9" pin="B12"/>
+      <node ref="J9" pin="B1"/>
+      <node ref="J9" pin="S1"/>
+      <node ref="J9" pin="A1"/>
+      <node ref="J9" pin="A12"/>
+    </net>
+    <net code="110" name="Net-(J9-PadB11)">
+      <node ref="J9" pin="B11"/>
+    </net>
+    <net code="111" name="Net-(J9-PadB10)">
+      <node ref="J9" pin="B10"/>
+    </net>
+    <net code="112" name="Net-(J9-PadA8)">
+      <node ref="J9" pin="A8"/>
+    </net>
+    <net code="113" name="Net-(J9-PadA5)">
+      <node ref="J9" pin="A5"/>
+    </net>
+    <net code="114" name="Net-(J9-PadA3)">
+      <node ref="J9" pin="A3"/>
+    </net>
+    <net code="115" name="Net-(J9-PadA2)">
+      <node ref="J9" pin="A2"/>
+    </net>
+    <net code="116" name="Net-(J9-PadA11)">
+      <node ref="J9" pin="A11"/>
+    </net>
+    <net code="117" name="Net-(J9-PadA10)">
+      <node ref="J9" pin="A10"/>
+    </net>
+    <net code="118" name="Net-(IC2-Pad7)">
+      <node ref="IC2" pin="7"/>
+      <node ref="K6" pin="4"/>
+    </net>
+    <net code="119" name="Net-(IC2-Pad2)">
+      <node ref="K1" pin="4"/>
+      <node ref="IC2" pin="2"/>
+    </net>
+    <net code="120" name="Net-(IC2-Pad13)">
+      <node ref="IC2" pin="13"/>
+    </net>
+    <net code="121" name="Net-(IC2-Pad11)">
+      <node ref="IC2" pin="11"/>
+    </net>
+    <net code="122" name="Net-(IC2-Pad14)">
+      <node ref="IC2" pin="14"/>
+    </net>
+    <net code="123" name="Net-(IC2-Pad3)">
+      <node ref="K2" pin="4"/>
+      <node ref="IC2" pin="3"/>
+    </net>
+    <net code="124" name="Net-(IC2-Pad1)">
+      <node ref="IC2" pin="1"/>
+    </net>
+    <net code="125" name="Net-(IC2-Pad21)">
+      <node ref="IC2" pin="21"/>
+    </net>
+    <net code="126" name="Net-(IC2-Pad20)">
+      <node ref="IC2" pin="20"/>
+    </net>
+    <net code="127" name="Net-(IC2-Pad18)">
+      <node ref="IC2" pin="18"/>
+    </net>
+    <net code="128" name="Net-(IC2-Pad9)">
+      <node ref="K8" pin="4"/>
+      <node ref="IC2" pin="9"/>
+    </net>
+    <net code="129" name="Net-(IC2-Pad5)">
+      <node ref="IC2" pin="5"/>
+      <node ref="K4" pin="4"/>
+    </net>
+    <net code="130" name="Net-(IC2-Pad6)">
+      <node ref="K5" pin="4"/>
+      <node ref="IC2" pin="6"/>
+    </net>
+    <net code="131" name="Net-(IC2-Pad8)">
+      <node ref="IC2" pin="8"/>
+      <node ref="K7" pin="4"/>
+    </net>
+    <net code="132" name="Net-(IC2-Pad4)">
+      <node ref="K3" pin="4"/>
+      <node ref="IC2" pin="4"/>
+    </net>
+  </nets>
+</export>

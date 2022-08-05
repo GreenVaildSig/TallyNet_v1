@@ -1,0 +1,222 @@
+
+(rules PCB Empfaenger
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 9)
+    (layer_rule Front
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.3)
+    )
+    (layer_rule Back
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 500.0)
+    (clear 350.2)
+    (clear 250.0 (type smd_to_turn_gap))
+    (clear 100.2 (type Min_Min))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle Front 800.0 0.0 0.0)
+    )
+    (shape
+      (circle Back 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_450:200_um"
+    (shape
+      (circle Front 450.0 0.0 0.0)
+    )
+    (shape
+      (circle Back 450.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_450:200_um" "Via[0-1]_450:200_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_450:200_um-kicad_default" "Via[0-1]_450:200_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-GND" "Via[0-1]_800:400_um" GND
+  )
+  (via 
+    "Via[0-1]_450:200_um-GND" "Via[0-1]_450:200_um" GND
+  )
+  (via 
+    "Via[0-1]_800:400_um-Min" "Via[0-1]_800:400_um" Min
+  )
+  (via 
+    "Via[0-1]_450:200_um-Min" "Via[0-1]_450:200_um" Min
+  )
+  (via 
+    "Via[0-1]_800:400_um-SMD" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_450:200_um-SMD" "Via[0-1]_450:200_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-Vcc" "Via[0-1]_800:400_um" Vcc
+  )
+  (via 
+    "Via[0-1]_450:200_um-Vcc" "Via[0-1]_450:200_um" Vcc
+  )
+  (via 
+    "Via[0-1]_800:400_um-Vcc3" "Via[0-1]_800:400_um" Vcc3
+  )
+  (via 
+    "Via[0-1]_450:200_um-Vcc3" "Via[0-1]_450:200_um" Vcc3
+  )
+  (via 
+    "Via[0-1]_800:400_um-Vcc5" "Via[0-1]_800:400_um" Vcc5
+  )
+  (via 
+    "Via[0-1]_450:200_um-Vcc5" "Via[0-1]_450:200_um" Vcc5
+  )
+  (via_rule
+    default "Via[0-1]_450:200_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    GND "Via[0-1]_800:400_um-GND"
+  )
+  (via_rule
+    Min "Via[0-1]_450:200_um-Min"
+  )
+  (via_rule
+    SMD "Via[0-1]_800:400_um" "Via[0-1]_800:400_um-SMD"
+  )
+  (via_rule
+    Vcc "Via[0-1]_800:400_um-Vcc"
+  )
+  (via_rule
+    Vcc3 "Via[0-1]_800:400_um-Vcc3"
+  )
+  (via_rule
+    Vcc5 "Via[0-1]_800:400_um-Vcc5"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer Front Back)
+    )
+  )
+  (class "kicad_default"
+    "Net-(C1-Pad1)" "Net-(C2-Pad1)" "Net-(IC1-Pad1)" "Net-(IC1-Pad2)" "Net-(IC1-Pad3)" "Net-(IC1-Pad4)" "Net-(IC1-Pad5)" "Net-(IC1-Pad6)"
+    "Net-(IC1-Pad7)" "Net-(IC1-Pad9)" "Net-(IC1-Pad11)" "Net-(IC1-Pad12)" "Net-(IC1-Pad14)" "Net-(IC1-Pad15)" "Net-(IC2-Pad1)" "Net-(J11-Pad1)"
+    "Net-(J11-Pad2)" "Net-(J11-Pad8)" "Eth_T+" "Eth_T-" "Eth_R+" "Eth_R-" "Net-(J12-Pad7)" "Net-(J13-Pad7)"
+    "Net-(J13-Pad10)" "SPI0-SCK" "SPI0-MOSI" "DISP-Res" "DISP-DC" "SPI0-CS0" "Net-(J14-Pad8)" "SPI1-CS1"
+    "SPI1-MISO" "SPI1-MOSI" "SPI1-SCK" "Net-(PS2-Pad6)" "Net-(U1-Pad59)" "Net-(U1-Pad58)" "Net-(U1-Pad57)" "Net-(U1-Pad56)"
+    "Net-(U1-Pad55)" "Net-(U1-Pad37)" "Net-(U1-Pad36)" "Net-(U1-Pad31)" "Net-(U1-Pad30)" "SPI0-CS1" "Net-(U1-Pad26)" "Net-(U1-Pad25)"
+    "Net-(U1-Pad24)" "SPI0-MISO" "Net-(U1-Pad16)" "Net-(U1-Pad17)" "Net-(U1-Pad50)" "Net-(U1-Pad51)" "Net-(U1-Pad52)" "Net-(U1-Pad53)"
+    "Net-(U1-Pad54)" USBDP USBDN "Net-(IC2-Pad11)" /Tallyausgangsschaltung/EN1 "Net-(IC2-Pad13)" "Net-(IC2-Pad14)" "Net-(IC2-Pad18)"
+    "Net-(IC2-Pad20)" "Net-(IC2-Pad21)" /Tallyausgangsschaltung/Tally1 /Tallyausgangsschaltung/Tally2 /Tallyausgangsschaltung/Tally3 /Tallyausgangsschaltung/Tally4 /Tallyausgangsschaltung/Tally5 /Tallyausgangsschaltung/Tally6
+    /Tallyausgangsschaltung/Tally7 /Tallyausgangsschaltung/Tally8 "Net-(J12-Pad8)" "Net-(J13-Pad9)" "Net-(J13-Pad11)" "Net-(J13-Pad12)" "Net-(J13-Pad13)" "Net-(J13-Pad14)"
+    "Net-(U1-Pad45)" "Net-(U1-Pad44)" "Net-(U1-Pad43)" "Net-(U1-Pad42)" "Net-(U1-Pad41)" "Net-(U1-Pad40)" "Net-(U1-Pad39)" "Net-(U1-Pad38)"
+    "Net-(U1-Pad4)" "Net-(U1-Pad5)" "Net-(U1-Pad6)" "Net-(U1-Pad7)" "Net-(U1-Pad8)" "Net-(U1-Pad9)" "Net-(U1-Pad10)" "Net-(U1-Pad11)"
+    "Net-(U1-Pad15)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(D7-Pad2)"
+    "Net-(D8-Pad2)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer Front Back)
+    )
+  )
+  (class GND
+    GND3V3 GNDTally GNDEth GNDSPI GND GNDIC GND12V
+    (clearance_class GND)
+    (via_rule GND)
+    (rule
+      (width 1000.0)
+    )
+    (circuit 
+      (use_layer Front Back)
+    )
+  )
+  (class Min
+    (clearance_class Min)
+    (via_rule Min)
+    (rule
+      (width 100.0)
+    )
+    (circuit 
+      (use_layer Front Back)
+    )
+  )
+  (class SMD
+    (clearance_class smd)
+    (via_rule SMD)
+    (rule
+      (width 300.0)
+    )
+    (circuit 
+      (use_layer Front Back)
+    )
+  )
+  (class Vcc
+    +12V 12V
+    (clearance_class Vcc)
+    (via_rule Vcc)
+    (rule
+      (width 1000.0)
+    )
+    (circuit 
+      (use_layer Front Back)
+    )
+  )
+  (class Vcc3
+    3V3
+    (clearance_class Vcc3)
+    (via_rule Vcc3)
+    (rule
+      (width 700.0)
+    )
+    (circuit 
+      (use_layer Front Back)
+    )
+  )
+  (class Vcc5
+    5VIC
+    (clearance_class Vcc5)
+    (via_rule Vcc5)
+    (rule
+      (width 700.0)
+    )
+    (circuit 
+      (use_layer Front Back)
+    )
+  )
+)
